@@ -1,0 +1,45 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/articles/articles",
+		"pages/music/music",
+		"pages/my/my"	
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "WeChat",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#333",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "图文",
+				"iconPath": "/common/icons/i-img.png",
+				"selectedIconPath": "/common/icons/i-img@checked.png"
+			},
+			{
+				"pagePath": "pages/articles/articles",
+				"text": "阅读",
+				"iconPath": "/common/icons/i-article.png",
+				"selectedIconPath": "/common/icons/i-article@checked.png"
+			},
+			{
+				"pagePath": "pages/music/music",
+				"text": "音乐",
+				"iconPath": "/common/icons/i-music.png",
+				"selectedIconPath": "/common/icons/i-music@checked.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "/common/icons/i-my.png",
+				"selectedIconPath": "/common/icons/i-my@checked.png"
+			}
+		]
+	}
+}
