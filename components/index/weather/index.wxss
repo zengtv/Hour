@@ -1,0 +1,13 @@
+/* components/index/weather/index.wxss */
+.weather-container {
+    display: inline-flex;
+    margin-top: 62rpx;
+    flex-direction: row;
+    line-height: 22rpx;
+    font-size: 24rpx;
+    color: #969696;
+    opacity: .8;
+}
+.weather-container text {
+    padding-left: 10rpx;
+}

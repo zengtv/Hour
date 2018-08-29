@@ -1,0 +1,22 @@
+/* components/index/date/date.wxss */
+
+.date-container {
+    display: inline-flex;
+    /* width: 168rpx; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #333;
+    font-weight: 600;
+}
+
+.day {
+    font-size: 62rpx;
+    line-height: 62rpx;
+    margin-right: 10rpx;
+}
+
+.month, .year {
+    font-size: 24rpx;
+}

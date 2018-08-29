@@ -1,4 +1,4 @@
-// pages/articles/articles.js
+// pages/reading/reading.js
 Page({
 
   /**

@@ -1,7 +1,7 @@
 {
 	"pages": [
 		"pages/index/index",
-		"pages/articles/articles",
+		"pages/reading/reading",        
 		"pages/music/music",
 		"pages/my/my"	
 	],
@@ -23,10 +23,10 @@
 				"selectedIconPath": "/common/icons/i-img@checked.png"
 			},
 			{
-				"pagePath": "pages/articles/articles",
+				"pagePath": "pages/reading/reading",
 				"text": "阅读",
-				"iconPath": "/common/icons/i-article.png",
-				"selectedIconPath": "/common/icons/i-article@checked.png"
+				"iconPath": "/common/icons/i-reading.png",
+				"selectedIconPath": "/common/icons/i-reading@checked.png"
 			},
 			{
 				"pagePath": "pages/music/music",

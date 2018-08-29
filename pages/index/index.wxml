@@ -1,1 +1,7 @@
 <!--index.wxml-->
+<view class="header">
+    <!-- 日期组件 -->
+    <date />
+    <!-- 天气组件 -->
+    <weather city="{{city}}" weather="{{weather}}" tmp="{{tmp}}" />
+</view>

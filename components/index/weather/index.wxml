@@ -1,0 +1,7 @@
+<!--components/index/weather/index.wxml-->
+<view class="weather-container">
+    <text class="city">{{city?city:'火星'}}</text>
+    <text>·</text>
+    <text class="weather">{{weather?weather:'流星雨'}}</text>
+    <text class="tmp">{{tmp?tmp:'-63'}}℃</text>
+</view>
