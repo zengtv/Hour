@@ -1,0 +1,4 @@
+<!--components/index/like/index.wxml-->
+<view class="like" catch:tap="onLike">
+	<image src="{{likeState?like:normal}}"></image>
+</view>

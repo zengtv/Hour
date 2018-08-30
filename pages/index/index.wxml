@@ -3,5 +3,20 @@
     <!-- 日期组件 -->
     <date />
     <!-- 天气组件 -->
-    <weather city="{{city}}" weather="{{weather}}" tmp="{{tmp}}" />
+    <weather showWeather="{{showWeather}}"
+					city="{{city}}"
+					weather="{{weather}}" 
+					tmp="{{tmp}}" 
+					bind:weatherTap="weatherTap" 
+	/>
+</view>
+<view class="content">
+	<!-- one图文组件 -->
+	<one content="{{oneList.content}}"
+			img_url= "{{oneList.img_url}}"
+			picture_author= "{{oneList.picture_author}}"
+			text_authors= "{{oneList.text_authors}}"
+			title= "{{oneList.title}}"
+			likeState= "{{likeState}}"
+	 />
 </view>

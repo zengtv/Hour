@@ -1,0 +1,15 @@
+<!--components/index/one/index.wxml-->
+<view class="one-container">
+    <view class="img-container'">
+        <image src="{{img_url}}" data-src="{{img_url}}" catch:tap="onPreview"></image>
+    </view>
+    <view class="picture-author">{{picture_author}}</view>
+    <text class="content">{{content}}</text>
+    <text class="text-authors">{{text_authors}}</text>
+    <view class="handle">
+        <!-- like组件 -->
+        <like title="{{title}}" likeState="{{likeState}}" />
+        <!-- 分享组件 -->
+        <share />
+    </view>
+</view>

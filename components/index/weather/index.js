@@ -7,6 +7,7 @@ Component({
         city:String,
         weather: String,
         tmp: String,
+		showWeather: Boolean
     },
 
     /**
@@ -20,6 +21,8 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+		onTap:function() {
+			this.triggerEvent('weatherTap')
+		}
     }
 })

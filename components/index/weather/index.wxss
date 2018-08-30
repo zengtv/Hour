@@ -11,3 +11,6 @@
 .weather-container text {
     padding-left: 10rpx;
 }
+.no-weather {
+	text-decoration: underline
+}

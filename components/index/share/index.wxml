@@ -1,0 +1,4 @@
+<!--components/index/share/index.wxml-->
+<button class="share" open-type="share" hover-class='none'>
+	<image src="./images/i-share.png"></image>
+</button>

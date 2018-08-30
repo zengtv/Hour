@@ -1,7 +1,12 @@
 <!--components/index/weather/index.wxml-->
 <view class="weather-container">
-    <text class="city">{{city?city:'火星'}}</text>
-    <text>·</text>
-    <text class="weather">{{weather?weather:'流星雨'}}</text>
-    <text class="tmp">{{tmp?tmp:'-63'}}℃</text>
+    <view wx:if="{{showWeather}}">
+        <text class="city">{{city}}</text>
+        <text>·</text>
+        <text class="weather">{{weather}}</text>
+        <text class="tmp">{{tmp}}℃</text>
+    </view>
+    <view wx:else="" bind:tap="onTap">
+		<text class='no-weather'>下雨天了怎么办我好想你...</text>
+    </view>
 </view>

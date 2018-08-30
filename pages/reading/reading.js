@@ -1,66 +1,93 @@
 // pages/reading/reading.js
+const app = getApp()
+import {
+    WeatherModule
+} from '../../modules/weather.js'
+import {
+    OneModule
+} from '../../modules/one.js'
+let oneModule = new OneModule
+let weatherModule = new WeatherModule
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
-  },
+    /**
+     * 页面的初始数据
+     */
+    data: {
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
+    },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面加载
+     */
+    onLoad: function(options) {
+        wx.request({
+            url: 'http://m.wufazhuce.com/index',
+            method: 'GET',
+            dataType: 'json',
+            responseType: 'text',
+            success: function(res) {
+                console.log(res.data.split('http://m.wufazhuce.com/article/'))
+                let a = res.data.split('http://m.wufazhuce.com/article/')
+				let idArr = []
+				let titleArr = []
+                for (let i = 1; i < a.length; i++) {
+					idArr.push((a[i].split('"'))[0])
+                }
+				console.log(idArr)
+            },
+            fail: function(res) {},
+            complete: function(res) {},
+        })
+    },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
+    onReady: function() {
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+    },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面显示
+     */
+    onShow: function() {
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
+    },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
+    /**
+     * 生命周期函数--监听页面隐藏
+     */
+    onHide: function() {
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
+    },
+
+    /**
+     * 生命周期函数--监听页面卸载
+     */
+    onUnload: function() {
+
+    },
+
+    /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+    onPullDownRefresh: function() {
+
+    },
+
+    /**
+     * 页面上拉触底事件的处理函数
+     */
+    onReachBottom: function() {
+
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function() {
+
+    }
 })

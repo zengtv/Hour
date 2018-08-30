@@ -15,3 +15,14 @@ weather {
     height: auto;
     margin-right: 36rpx;
 }
+.content {
+	display: flex;
+	width: 100%;
+}
+one {
+	width: 100%;
+	display: inline-flex;
+}
+
+like {
+}
