@@ -1,7 +1,6 @@
 /* components/index/like/index.wxss */
 
 .like {
-	margin-right: 80rpx;
     padding: 10rpx;
 }
 

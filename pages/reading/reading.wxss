@@ -1,1 +1,12 @@
 /* pages/reading/reading.wxss */
+page {
+    background-color: #eee;
+}
+.header {
+    margin-bottom: 15rpx;
+}
+
+s-story {
+    display: block;
+    background-color: #fff;
+}

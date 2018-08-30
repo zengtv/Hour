@@ -1,8 +1,8 @@
 {
     "navigationBarTitleText": "图文",
     "usingComponents": {
-        "date": "/components/index/date/index",
-        "weather": "/components/index/weather/index",
-		"one": "/components/index/one/index"
+        "s-date": "/components/index/date/index",
+        "s-weather": "/components/index/weather/index",
+		"s-one": "/components/index/one/index"
     }
 }

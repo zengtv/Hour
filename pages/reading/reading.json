@@ -1,1 +1,7 @@
-{}
+{
+    "navigationBarTitleText": "阅读",
+    "usingComponents": {
+        "s-story": "/components/reading/one_story/index",
+        "s-articles": "/components/reading/articles/index"        
+    }
+}

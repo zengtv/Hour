@@ -8,8 +8,8 @@
     <text class="text-authors">{{text_authors}}</text>
     <view class="handle">
         <!-- like组件 -->
-        <like title="{{title}}" likeState="{{likeState}}" />
+        <s-like title="{{title}}" likeState="{{likeState}}" />
         <!-- 分享组件 -->
-        <share />
+        <s-share />
     </view>
 </view>

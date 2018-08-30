@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "s-like": "/components/index/like/index",
+        "s-share": "/components/index/share/index"
+    }
+}

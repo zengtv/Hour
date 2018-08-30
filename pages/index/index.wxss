@@ -1,4 +1,7 @@
 /**index.wxss**/
+page {
+    background-color: #eee;
+}
 .header {
     display: flex;
     width: 100%;
@@ -6,20 +9,22 @@
     flex-direction: row;
     justify-content: space-between;
     overflow: hidden;
+    background-color: #fff;
 }
-date {
+s-date {
     margin-left: 36rpx;
     margin-top: 32rpx;
 }
-weather {
+s-weather {
     height: auto;
     margin-right: 36rpx;
 }
 .content {
 	display: flex;
 	width: 100%;
+    background-color: #fff;
 }
-one {
+s-one {
 	width: 100%;
 	display: inline-flex;
 }

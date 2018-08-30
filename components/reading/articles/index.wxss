@@ -1,0 +1,56 @@
+/* components/reading/articles/index.wxss */
+.articles-container {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.head {
+    display: inline-flex;
+    width: 230rpx;
+    line-height: 80rpx;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #969696;
+    opacity: .8;
+}
+
+.article-list {
+    width: 100%;
+}
+
+.article-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20rpx 40rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.article-item image {
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.article-item .article-info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 520rpx;
+    height: 120rpx;
+}
+
+.article-info .title {
+    display: block;
+    height: 100rpx;
+    color: #3d3d3d;
+    font-size: 28rpx;
+}
+
+.article-info .author {
+    font-size: 24rpx;
+    color: #969696;
+}

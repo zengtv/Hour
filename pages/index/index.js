@@ -7,8 +7,10 @@ import {
 import {
     OneModule
 } from '../../modules/one.js'
+
 let oneModule = new OneModule
 let weatherModule = new WeatherModule
+
 
 Page({
     data: {
@@ -20,6 +22,7 @@ Page({
         oneList: [],
 		likeState: false		
     },
+   
     weatherTap: function() {
         console.log('yes')
         // 开启授权管理 同意后获取天气
@@ -41,9 +44,34 @@ Page({
                         })
                     },
                     fail: (res) => {
-                        this.setData({
-                            showWeather: false
+                        console.log('点击事件失败')
+                        wx.getLocation({
+                            success: (res) => {
+                                console.log(res)
+                                let longitude = (res.longitude).toFixed(2)
+                                let latitude = (res.latitude).toFixed(2)
+                                console.log(longitude)
+                                console.log(latitude)
+                                weatherModule.getNowWeather(longitude, latitude, (data) => {
+                                    console.log(data)
+                                    this.setData({
+                                        showWeather: true,
+                                        city: data.data.HeWeather6[0].basic.parent_city,
+                                        weather: data.data.HeWeather6[0].now.cond_txt,
+                                        tmp: data.data.HeWeather6[0].now.tmp
+                                    })
+                                })
+                            },
+                            fail: (res) => {
+                                console.log('点击事件2失败')
+                                this.setData({
+                                    showWeather: false
+                                })
+                            }
                         })
+                        // this.setData({
+                        //     showWeather: false
+                        // })
                     }
                 })
             },
@@ -69,11 +97,14 @@ Page({
                 })
             },
             fail: (res) => {
+                console.log('onload失败')
                 this.setData({
                     showWeather: false
                 })
             }
         })
+
+
         // 获取 ‘一个’ token 进而请求api
         oneModule.getOneToken((data) => {
             console.log(data)
@@ -99,7 +130,7 @@ Page({
     },
 
     onShow: function() {
-
+        
     },
 
 	/**
